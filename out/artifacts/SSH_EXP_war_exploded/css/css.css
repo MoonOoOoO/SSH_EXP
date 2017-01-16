@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: '微软雅黑 Light', serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.split {
+    margin: 0 5px;
+}
+
+#top {
+    color: #ffffff;
+    height: 36px;
+    background-color: #585858;
+    padding: 0 200px;
+}
+
+.top_right {
+    float: right;
+    line-height: 36px;
+}
+
+.top_right a {
+    color: #ffffff;
+}
+
+.top_right a:hover {
+    color: hotpink;
+}
+
+.top_left {
+    float: left;
+    line-height: 36px;
+}
+
+#nav {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    padding: 0 200px;
+    line-height: 80px;
+    float: right;
+    border-bottom: 1px solid #cccccc;
+}
+
+#nav img {
+    width: 120px;
+}
+
+.nav_left {
+    position: absolute;
+    left: 15%;
+    top: 5px;
+}
+
+.nav_right li a {
+    padding: 0;
+    border-radius: 0;
+    color: #585858;
+    font-size: 16px;
+    font-family: 微软雅黑, serif;
+}
+
+.nav_right li.active a:hover, .nav-pills li a:hover {
+    background-color: lightpink;
+    color: #ffffff;
+}
+
+.nav_right li.active a {
+    background-color: #ffffff;
+    color: hotpink;
+}
+
+.nav_btn {
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 25px 0;
+    right: 15%;
+    background-color: hotpink;
+    color: #ffffff;
+}
+
+.nav_btn:hover, .nav_btn_user:hover, .nav_btn_quit:hover {
+    background-color: pink;
+    color: #ffffff;
+}
+
+.right_btn {
+    position: absolute;
+    right: 15%;
+    width: 120px;
+}
+
+.nav_btn_user {
+    display: block;
+    height: 30px;
+    width: 75px;
+    line-height: 30px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 25px 0;
+    background-color: hotpink;
+    color: #ffffff;
+    padding-left: 5px;
+    border-right: 1px solid white;
+}
+
+.nav_btn_quit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 30px;
+    width: 45px;
+    line-height: 30px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 25px 0;
+    background-color: hotpink;
+    color: #ffffff;
+    padding-right: 3px;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 100px;
+    float: left;
+}
+
+.content_top_img {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+#content .pic_note {
+    font-size: 20px;
+}
+
+#content .catalog, .user_center {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#content .catalog_title {
+    margin-left: 8%;
+    color: hotpink;
+    font-size: 20px;
+}
+
+#content hr {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.detail {
+    padding: 30px 0 0 10px;
+    display: block;
+}
+
+.thumbnail .vip_card_pic {
+    width: 50%;
+    height: 90%;
+    float: left;
+    margin: 15px 25px 15px 25px;
+    border-radius: 15px;
+}
+
+.buy_vip_card {
+    position: relative;
+    margin: 35px 50px 20px 50px;
+    float: right;
+    background-color: red;
+    color: #fff;
+    border: 1px #F0638B solid;
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    float: left;
+    top: 120px;
+    height: 100px;
+    background-color: #585858;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.shopping_cart {
+    padding-top: 3px;
+    padding-right: 5px;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    background-color: #888888;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.count {
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 1px;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.to_top {
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #888888;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.fl {
+    float: left;
+}
+
+.container {
+    width: 1008px;
+}
+
+.DLtop img {
+    margin: 20px 0 80px;
+}
+
+.form-sign_in {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #dcdcdc;
+}
+
+.form-sign_in-heading {
+    margin-bottom: 40px;
+    color: #ff4066;
+    border-bottom: 1px solid #ccc;
+    line-height: 60px;
+}
+
+.form-sign_in .checkbox {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 24px;
+    margin-left: 4%;
+}
+
+.form-sign_in .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-sign_in .form-control:focus {
+    z-index: 2;
+}
+
+.form-sign_in input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-control:focus {
+    border-color: #ff4066;
+    outline: 0 none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 64, 102, 0.6);
+}
+
+.button:hover {
+    color: #FFF;
+    background-color: #ff5375;
+    border-color: #f5395e;
+}
+
+.button {
+    color: #FFF;
+    background-color: #ff4066;
+    border-color: #e5113b;
+}
+
+.deng_lv {
+    float: right;
+    color: #ccc;
+}
+
+.deng_lv a {
+    color: #666;
+    font-size: 12px;
+}
+
+.deng_lv a:hover {
+    color: #ff4066;
+}
+
+.curr {
+    color: #ff4066 !important;
+}
+
+#loading {
+    width: 150px;
+    height: 60px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    margin-left: -75px;
+}
+
+.user_title {
+    border-left: 5px solid hotpink;
+    padding-left: 20px;
+    margin-left: 100px;
+}
+
+#content .user_center hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.left_list {
+    display: inline-block;
+    margin-left: 100px;
+    width: 150px;
+    text-align: center;
+    float: left;
+}
+
+.list-group-item, .list-group-item:first-child, .list-group-item:last-child {
+    font-family: 微软雅黑, sans-serif;
+    border-radius: 0;
+}
+
+.list_head {
+    color: #FFFFFF;
+    background-color: hotpink;
+    font-size: 18px;
+    line-height: 20px;
+    border: 1px solid hotpink;
+}
+
+.right_content {
+    position: relative;
+    background-color: #cccccc;
+    width: 70%;
+    margin-left: 280px;
+    text-align: center;
+}
+
+.clothes_item {
+    float: left;
+    width: 100%;
+}
+
+.clothes_item img {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 10px 25px 10px 10px;
+}
+
+.caption p {
+    font-family: 等线, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #585858;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.item_info {
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 微软雅黑, serif;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.price {
+    color: hotpink;
+}
+
+.buy_num {
+    width: 35px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    font-weight: bold;
+    color: hotpink;
+}
+
+.number {
+    margin: 0;
+    display: inline-block;
+}
+
+.control_num {
+    display: inline-block;
+    user-select: none;
+}
+
+.minus, .plus, .buy_num {
+    display: inline-block;
+    height: 30px;
+}
+
+.minus, .plus {
+    width: 30px;
+    line-height: 29px;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.minus {
+    margin-right: -4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.plus {
+    margin-left: -5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.minus:hover, .plus:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+.add_to_cart {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: hotpink;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+}
+
+.add_to_cart:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: #ffffff;
+}

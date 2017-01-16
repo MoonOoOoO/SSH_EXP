@@ -1,0 +1,128 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    width: 1028px !important;
+    position: relative;
+    margin-top: 960px;
+}
+#catchline {
+    margin: 20px 0;
+    height: 128px;
+}
+#catchline .col-md-3, #catchline .col-xs-3 {
+    text-align: center;
+}
+.T_right {
+    float: right;
+    width: 100%;
+}
+.T_right_box {
+    overflow: hidden;
+    height: 180px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.T_title {
+    height: 70px;
+    background: hotpink;
+}
+.T_title img {
+    margin: 10px 0 0 20px;
+    border: 5px solid #ffa4cb;
+    background-color: #FFF;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.T_title p {
+    margin-left: 25px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    padding-top: 34px;
+    overflow: hidden;
+}
+
+.T_title font {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 37px;
+    float: right;
+    margin-right: 15px;
+}
+
+.T_title_bottom {
+    margin-left: 160px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.T_title_bottom ul li {
+    margin-left: 10px;
+}
+
+.T_title_right {
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.T_title_right ul {
+    height: 90px;
+}
+
+.jifen_ico {
+    width: 30%;
+    height: auto;
+}
+.jifen_ico ul li span {
+    font-size: 16px;
+    color: #f00;
+    margin-left: 0px;
+    line-height: 30px;
+}
+
+.WOde {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.XOde {
+     width: 100%;
+     padding: 15px;
+     background-color: #f0f0f0;
+     margin-top: 20px;
+ }
+
+.fr {
+    float: right;
+    display: inline;
+    color: #555;
+}
+
+.BTTn {
+    margin: 60px auto 0px;
+    background-color: #fdeff4;
+    border: 1px solid #febdd9;
+    width: 80%;
+    height: 100px;
+    border-radius: 6px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.BTTn ul li a {
+    color: #e177a5;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+.mt10 {
+    margin-top: 10px;
+}

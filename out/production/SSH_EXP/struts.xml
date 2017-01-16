@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="Login" class="com.action.LoginAction">
+            <result name="success">/index.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+        <action name="Register" class="com.action.RegisterAction">
+            <result name="success">/login.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="UserCenter" class="com.action.UserCenterAction">
+            <result name="success">/user_center.jsp</result>
+        </action>
+        <action name="WashClothes" class="com.action.WashClothesAction">
+            <result name="success">/wash_clothes.jsp</result>
+        </action>
+        <action name="AddClothes" class="com.action.AddClothesAction">
+            <result name="success">/tips.jsp</result>
+        </action>
+        <action name="ChangePassword" class="com.action.ChangePwsAction">
+            <result name="success">/login.jsp</result>
+            <result name="error">/update_pwd.jsp</result>
+        </action>
+        <action name="Quit" class="com.action.QuitAction">
+            <result name="success">/tips.jsp</result>
+        </action>
+        <action name="LoadCart" class="com.action.LoadCartAction">
+            <result name="success">/cart.jsp</result>
+            <result type="redirectAction" name="error">Login</result>
+        </action>
+        <action name="DeleteOrderItem" class="com.action.DeleteorderitemAction">
+            <result type="redirectAction" name="success">LoadCart</result>
+        </action>
+        <action name="AddOrder" class="com.action.AddorderAction">
+            <result type="redirectAction" name="success">UserCenter</result>
+        </action>
+        <action name="GetAddress" class="com.action.GetAddrAction">
+            <result name="success">address.jsp</result>
+        </action>
+    </package>
+</struts>

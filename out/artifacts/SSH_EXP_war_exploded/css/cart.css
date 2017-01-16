@@ -1,0 +1,102 @@
+body {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    user-select: none;
+}
+
+.shop_top {
+    width: 74%;
+    margin-left: 13%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.shop_info_type {
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.buy_select_goods {
+    width: 74%;
+    margin-left: 13%;
+    height: 50px;
+    line-height: 50px;
+    background: #e5e5e5;
+}
+
+.shop_info_bottom {
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.buy_good {
+    background-color: #f40;
+    color: white;
+    width: 100%;
+    border: none;
+}
+
+.text {
+    line-height: 100%;
+    text-align: center;
+}
+
+.buy_good:hover {
+    background-color: #f22d00;
+}
+
+.detail_info {
+    width: 74%;
+    margin-left: 13%;
+    border-radius: 0;
+    height: 162px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 100%;
+}
+
+.good_info {
+    position: relative;
+    float: left;
+}
+
+.select_one {
+    margin-top: 40px;
+    margin-left: 45px;
+}
+
+.good_pic {
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 200px;
+    height: 150px;
+}
+
+.good_name {
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+.good_price {
+    font-size: 18px;
+}
+
+.good_total_price {
+    font-size: 18px;
+}
+
+.delete_one {
+    font-size: 18px;
+}
+
+.delete_one:hover {
+    color: #f40;
+    text-decoration: underline;
+    cursor: pointer;
+}

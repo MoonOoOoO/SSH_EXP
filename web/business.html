@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>商家中心</title>
+    <style>
+        .content{
+            width:80%;
+            margin-left: 10%;
+        }
+        .header{
+            background: hotpink;
+            height: 50px;
+            position: relative;
+            margin: 0 0 20px 0;
+            width: 100%;
+            text-align: center;
+            line-height: 100%;
+            padding-top: 10px;
+        }
+        .header_content{
+            height: 50px;
+            line-height: 100%;
+            font-size: 30px;
+            color: white;
+        }
+        .business_title{
+            border-left: 5px solid hotpink;
+            padding-left: 20px;
+            margin-left: 50px;
+        }
+        .left-list {
+            display: inline-block;
+            margin-left: 50px;
+            width: 150px;
+            text-align: center;
+            float: left;
+        }
+        .right-list{
+            display: inline-block;
+            margin-left: 20px;
+            width: 822px;
+
+            float: left;
+            position: relative;
+        }
+        .list_head{
+            display: inline-block;
+            background-color: hotpink;
+            font-size: 18px;
+            border: 1px solid hotpink;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        .zz{
+            height: auto;
+            line-height: 100%;
+            font-size: 18px;
+            color: white;
+            padding-left: 20px;
+        }
+        .business_detail{
+            position: relative;
+            float: left;
+            margin-left: 0;
+        }
+        #order_info{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <span class="header_content">校园洗衣店</span>
+    </div>
+    <div class="content">
+        <div class="business_title"><h2>商家中心</h2></div>
+        <hr>
+        <div class="left-list">
+            <div class="list-group">
+                <div class="list-group-item list_head">商家设置</div>
+                <a  href="#" id="go-business_info" class="list-group-item">商家首页</a>
+                <a href="#" class="list-group-item">信息管理</a>
+            </div>
+            <br style="height: 10px">
+            <div class="list-group">
+                <div class="list-group-item list_head">订单中心</div>
+                <a id="go-order_info" href="#" class="list-group-item">订单管理</a>
+            </div>
+        </div>
+
+        <div class="right-list">
+            <div id="business_info">
+                <div class="right-head">
+                    <div class="row" style="background-color:hotpink;margin-left: 0px;width: 100%;height: 30px;line-height: 30px">
+                        <span class="zz">商家信息</span>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="row">
+                            <div class="left_info col-md-4">
+                                <img src="img/div.jpg" style="width: 100%" height="140px">
+
+                            </div>
+                            <div class="left_info col-md-4">
+                                <div class="business_detail">
+                                    <span>商家名称： 东北大学洗衣店</span>
+                                    <br><br>
+                                    <span>好评度： </span>
+                                    <img src="img/heart.jpg">
+                                    <img src="img/heart.jpg">
+                                    <img src="img/heart.jpg">
+                                    <img src="img/heart.jpg">
+                                    <br><br>
+                                    <span>好评率： 100%</span>
+                                    <br><br>
+                                    <span>店铺位置： 东北大学浑南校区</span>
+
+                                </div>
+                            </div>
+                            <div class="right-info col-md-4">
+                                <div class="business_detail">
+                                    <span><b>动态评价</b></span>
+                                    <br><br>
+                                    <span>描述相符： </span>
+                                    <img src="img/dimond.gif" class="rank" align="absmiddle" border="0">
+                                    <br><br>
+                                    <span>服务态度： </span>
+                                    <img src="img/dimond.gif" class="rank" align="absmiddle" border="0">
+                                    <br><br>
+                                    <span>清洗速度： </span>
+                                    <img src="img/dimond.gif" class="rank" align="absmiddle" border="0">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fire_sell">
+                    <div class="row" style="background-color:hotpink;margin-left: 0px;width: 100%;height: 30px;line-height: 30px">
+                        <span class="zz">最新商品</span>
+                        <div class="thumbnail" style="height: 200px">
+                            <img src="img/div.jpg" style="height: 190px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="order_info">
+                <div class="right-list" >
+                    <div class="unfinished">
+                        <div class="row" style="background-color:hotpink;margin-left: 0;width: 100%;height: 30px;line-height: 30px">
+                            <span class="zz">未完成订单</span>
+                        </div>
+                        <div class="thumbnail" style="height: 200px;">
+                            <img src="img/div.jpg" style="height:190px">
+                        </div>
+                    </div>
+                    <div class="finished">
+                        <div class="row" style="background-color:hotpink;margin-left: 0;width: 100%;height: 30px;line-height: 30px">
+                            <span class="zz">未完成订单</span>
+                        </div>
+                        <div class="thumbnail" style="height: 200px;">
+                            <img src="img/div.jpg" style="height:190px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    $(function () {
+        $("#go-business_info").click(function () {
+            target = document.getElementById("business_info");
+            other_target = document.getElementById("order_info");
+            if (target.style.display=="none"){
+                target.style.display="block";
+            }
+            if (other_target.style.display=="block"){
+                other_target.style.display="none";
+            }else {
+                other_target.style.display="none";
+            }
+
+        })
+        $("#go-order_info").click(function () {
+            target = document.getElementById("order_info");
+            other_target = document.getElementById("business_info");
+            if (target.style.display=="none"){
+                target.style.display="block";
+            }
+            if (other_target.style.display=="block"){
+                other_target.style.display="none";
+            }else {
+                other_target.style.display="none";
+            }
+
+        })
+    })
+</script>
+</html>

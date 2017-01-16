@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - laundry@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="laundry">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sys"/>
+    <table id="6" parent="1" name="address"/>
+    <table id="7" parent="1" name="clothesinfo"/>
+    <table id="8" parent="1" name="orderinfo"/>
+    <table id="9" parent="1" name="orderitem"/>
+    <table id="10" parent="1" name="userinfo"/>
+    <column id="11" parent="6" name="address_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="12" parent="6" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="13" parent="6" name="city">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="14" parent="6" name="school">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="15" parent="6" name="compus">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="16" parent="6" name="detail">
+      <data-type>varchar(80)|0</data-type>
+    </column>
+    <key id="17" parent="6" name="PRIMARY">
+      <columns>address_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="7" name="clothes_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="19" parent="7" name="clothes_name">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="20" parent="7" name="clothes_price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="21" parent="7" name="clothes_type">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="22" parent="7" name="clothes_pic">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="23" parent="7" name="PRIMARY">
+      <columns>clothes_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="24" parent="8" name="order_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="25" parent="8" name="user_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="26" parent="8" name="address">
+      <data-type>varchar(140)|0</data-type>
+    </column>
+    <column id="27" parent="8" name="order_price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="28" parent="8" name="order_status">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="29" parent="8" name="order_date">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="30" parent="8" name="PRIMARY">
+      <columns>order_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="31" parent="9" name="orderitem_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="32" parent="9" name="order_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="33" parent="9" name="clothes_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="9" name="clothes_num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="35" parent="9" name="user_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="36" parent="9" name="PRIMARY">
+      <columns>orderitem_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="10" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="38" parent="10" name="user_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;匿名用户&apos;</default-expression>
+    </column>
+    <column id="39" parent="10" name="user_psw">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="40" parent="10" name="user_tel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="41" parent="10" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="42" parent="10" name="user_balance">
+      <data-type>decimal(10,2) unsigned|0</data-type>
+    </column>
+    <column id="43" parent="10" name="user_point">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="44" parent="10" name="user_headpic">
+      <data-type>varchar(80)|0</data-type>
+    </column>
+    <column id="45" parent="10" name="user_defaultaddr">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="46" parent="10" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
